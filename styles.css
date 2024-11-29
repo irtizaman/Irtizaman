@@ -1,0 +1,242 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* Mobile Navigation Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Hero Section */
+#hero {
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    text-align: center;
+    padding: 200px 15px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about {
+    padding: 40px 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Image Styling */
+ .gameimg {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    
+}
+.abtimg{
+  width: 30%;
+  height: 30%;
+  border-radius: 15px;
+}
+
+.spotify-card {
+    padding: 20px;
+}
+
+.ytchan {
+    text-align: center;
+    text-decoration: none;
+}
+
+.nolink {
+    text-decoration: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Optional: Makes sure the footer fills the screen height */
+}
+
+/* Form Container */
+/* Form Container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Iframe Styling */
+.form-container iframe {
+    width: 100%;
+    max-width: 900px; /* Ensures it doesn’t exceed 900px */
+    height: 90vh; /* Makes it fill 90% of the viewport height */
+    min-height: 830px; /* Sets a minimum height for smaller screens */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    border: none;
+}
+
+
+iframe {
+    border-radius: 8px;
+    max-width: 100%;
+    height: 800px;
+    width: 900px;
+}
+/* Spotify Card */
+.spotify-card {
+    width: 100%; /* Take full width of the parent container */
+    padding: 0 15px; /* Same horizontal padding as other content */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    margin: 20px 0; /* Optional: Add spacing above and below */
+}
+
+.spotify-card iframe {
+    width: 100%; /* Make iframe fill the card's width */
+    height: 352px; /* Maintain original height */
+    border-radius: 12px; /* Keep rounded corners */
+    display: block; /* Removes extra spacing around iframe */
+}
+footer p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+
